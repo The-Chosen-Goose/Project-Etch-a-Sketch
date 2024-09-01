@@ -1,0 +1,167 @@
+@font-face {
+    font-family: font_1;
+    src: url(fonts/MonsterFriendFore.otf);
+}
+
+@font-face {
+    font-family: font_2;
+    src: url(fonts/Quantum.otf);
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    gap:60px;
+    align-items: center;
+    height:100vh;
+    margin:0;
+    background-color:#e1f3fd;
+}
+
+.header{
+    height:60px;
+    width:25%;
+    color:#7776B3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:font_1; 
+    font-size:xx-large;
+    margin-top:20px;
+}
+
+.container {
+    display:flex;
+    gap:40px;
+}
+
+#settings {
+    padding:30px;
+    height:500px;
+    width:300px;
+    border:5px solid black;
+    align-self:center;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    border:5px solid #7776B3;
+    background-color: white;
+    border-radius:15px;
+}
+
+#settings > * {
+    padding:0;
+}
+
+.board {
+    width:700px;
+    height:700px;
+    border:5px solid black;
+    display:flex;
+    max-width:100%;
+    flex-wrap:wrap;
+    border:5px solid #7776B3;
+    background-color: white;
+}
+
+.footer {
+    background-color:#7776B3;
+    height:100px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > a {
+    text-decoration:none;
+    color:white;
+    font-family: font_2;
+    font-size:x-large;
+    color:white;
+}
+
+#black_button,
+#erase_button,
+#rainbow_button{
+    font-family:font_1;
+    font-size:medium;   
+    width:300px;
+    height:70px;
+    border-radius: 12px;
+    display:flex;
+    justify-content: center;
+    background-color: black;
+    border:3px solid black;
+    flex-direction:column;  
+}
+
+#clear_button,
+#grid_button{
+    font-family:font_1;
+    font-size:medium;   
+    width:300px;
+    height:70px;
+    border-radius: 12px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border:3px solid black;
+    flex-direction:column;  
+}
+
+span {
+    width:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height:40px;
+    padding:5px;
+    border-radius: 10px;
+}
+
+#range {
+    width:300px;
+    accent-color:#7776B3;
+}
+
+.range_box{
+    width:300px;
+    height:100px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    text-align: center;
+}
+
+#range_value{
+    width:300px;
+    color:black;
+    font-family:font_1;
+}
+
+.board > * {
+    box-sizing: border-box;
+}
+
+
+.active{
+    margin-left:85px;
+    transition:.4s ;
+}
+
+.inactive {
+    margin-left:0px;
+    transition:.4s
+}
+
+
+#clear_button:active{
+    background-color:#FF6907;
+}
+
+#grid_button:active{
+    background-color:#FF6907;
+}
