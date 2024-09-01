@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset = 'utf-8'>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="header">Etch-a-Sketch</div>
+        <div class = "container">
+            <div id="settings">
+                <button id="black_button"><span id="default_span">Default Mode</span</button>
+                <button id="rainbow_button"><span id="rainbow_span">Rainbow Mode</span></button>
+                <button id="erase_button"><span id="erase_span">Eraser</span></button>
+                <button id="clear_button">Clear</button>
+                <button id="grid_button">Enable/Disable Grid</button>
+                <div class="range_box">
+                    <input type="range" min="1" max="50" value="25" id="range">
+                    <div id="range_value"></div>
+                </div>
+
+            </div>
+            <div id="board" class='board'></div>
+        </div>
+        <div class="footer"><a href="https://github.com/The-Chosen-Goose" target="_blank">The-Chosen-Goose</a></div>
+        <script src="script.js"></script>
+    </body>
+</html>
