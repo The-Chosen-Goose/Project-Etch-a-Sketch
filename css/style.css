@@ -17,6 +17,7 @@ body{
     height:100vh;
     margin:0;
     background-color:#e1f3fd;
+    overflow: hidden;
 }
 
 .header{
@@ -67,9 +68,8 @@ body{
 
 .footer {
     background-color:#7776B3;
-    height:100px;
     width:100%;
-    align-self: end;
+    height:70px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +80,10 @@ body{
     color:white;
     font-family: font_2;
     font-size:x-large;
-    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:70px;
 }
 
 #black_button,
